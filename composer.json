@@ -1,0 +1,37 @@
+{
+    "name": "tugmaks/php-coin-core",
+    "keywords": ["Bitcoin Core", "Litecoin Core", "rpc", "client"],
+
+    "description": "Simple php library for interacting with Litecoin/Bitcoin Core wallet via json rpc",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Tugmaks\\CoinCore\\": "src/CoinCore"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tugmaks\\CoinCore\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maxim Tyugaev",
+            "email": "tugmaks@yandex.ru"
+        }
+    ],
+    "require": {
+        "php":">=7.1",
+        "php-http/client-implementation": "^1.0",
+        "php-http/discovery": "^1.0"
+    },
+    "require-dev": {
+        "php-http/mock-client": "^1.0",
+        "phpunit/phpunit": "^7.2",
+        "php-http/curl-client": "^1.7",
+        "guzzlehttp/psr7": "^1.4"
+    },
+    "suggest": {
+        "php-http/guzzle6-adapter": "In order to use Guzzle v6 as the HTTP client"
+    }
+}
